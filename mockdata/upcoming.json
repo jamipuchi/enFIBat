@@ -1,3 +1,110 @@
-{
-    "data": []
-}
+[
+    {
+        "date": [
+            "2021-5-17",
+            "22:00"
+        ],
+        "type": "academic",
+        "description": {
+            "subject": "PRO2",
+            "type": "delivery",
+            "summary": "Final work submission"
+        }
+    },
+    {
+        "date": [
+            "2021-5-14",
+            "19:00"
+        ],
+        "type": "event",
+        "description": "Start of the HackUPC"
+    },
+    {
+        "date": [
+            "2021-5-19",
+            "15:00"
+        ],
+        "type": "academic",
+        "description": {
+            "subject": "EC",
+            "type": "delivery",
+            "summary": "Lab 5 report"
+        }
+    },
+    {
+        "date": [
+            "2021-5-21",
+            "12:00"
+        ],
+        "type": "social",
+        "description": "Everything 10% off at the bar"
+    },
+    {
+        "date": [
+            "2021-5-21",
+            "15:30"
+        ],
+        "type": "academic",
+        "description": {
+            "subject": "PRO2",
+            "type": "exam",
+            "summary": "Everything done at the lab"
+        }
+    },
+    {
+        "date": [
+            "2021-5-18",
+            "17:00"
+        ],
+        "type": "academic",
+        "description": {
+            "subject": "M2",
+            "type": "exam",
+            "summary": "Eulerian and Hamiltonian graphs"
+        }
+    },
+    {
+        "date": [
+            "2021-5-20",
+            "19:00"
+        ],
+        "type": "academic",
+        "description": {
+            "subject": "M1",
+            "type": "delivery",
+            "summary": "Jacobian matrix variation"
+        }
+    },
+    {
+        "date": [
+            "2021-5-22",
+            "1:00"
+        ],
+        "type": "talks",
+        "description": "The beauty of recursive algorithms"
+    },
+    {
+        "date": [
+            "2021-5-31",
+            "19:00"
+        ],
+        "type": "academic",
+        "description": {
+            "subject": "M1",
+            "type": "exam",
+            "summary": "Study of maximums, minimums and saddle points of vector functions"
+        }
+    },
+    {
+        "date": [
+            "2021-6-2",
+            "18:00"
+        ],
+        "type": "academic",
+        "description": {
+            "subject": "EC",
+            "type": "exam",
+            "summary": "Everything done at the lab"
+        }
+    }
+]
