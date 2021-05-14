@@ -1,0 +1,183 @@
+[
+    {
+        "name": "Welcome to enFIBat",
+        "image": "",
+        "sub_achievements": false,
+        "pre": "",
+        "post": "You have successfully logged in to enFIBAT!!"
+    },
+    {
+        "name": "First course enrolled",
+        "image": "",
+        "sub_achievements": false,
+        "pre": "Enroll to a course.",
+        "post": "You have successfully enrolled in to your first course at FIB!!"
+    },
+    {
+        "name": "First Semester Done",
+        "image": "",
+        "sub_achievements": false,
+        "sub_n": 4,
+        "sub": [
+            {
+                "name": "PRO1",
+                "image": "",
+                "sub_achievements": true,
+                "sub_n": 5,
+                "pre": "Encroll and pass PRO1 course.",
+                "post": "PRO1 passed successfully.",
+                "sub": [
+                    {
+                        "name": "First Program",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Submit any program!",
+                        "post": "You submited you first program!"
+                    },
+                    {
+                        "name": "First Exam",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Pass the first PRO1 exam.",
+                        "post": "You've passed the first exam of PRO1!"
+                    },
+                    {
+                        "name": "Second Exam",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Pass the second PRO1 exam.",
+                        "post": "You've passed the second exam of PRO1!."
+                    },
+                    {
+                        "name": "20 Problems Done",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Do at least 20 correct submissions.",
+                        "post": "You've alredy done 20 corrects submissions to Jutge."
+                    }
+                ]
+            },
+            {
+                "name": "IC",
+                "image": "",
+                "sub_achievements": true,
+                "sub_n": 4,
+                "pre": "Encroll and pass IC course.",
+                "post": "IC passed successfully.",
+                "sub": [
+                    {
+                        "name": "First Lab Session",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Go to your first computer lab of IC",
+                        "post": "You've gone to your first computer lab of IC"
+                    },
+                    {
+                        "name": "First Exam",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Pass the first IC exam.",
+                        "post": "You've passed the first exam of IC!"
+                    },
+                    {
+                        "name": "Second Exam",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Pass the second IC exam.",
+                        "post": "You've passed the second exam of IC!."
+                    },
+                    {
+                        "name": "Lab Done",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Go to all the lab sessions and submit the work",
+                        "post": "You've done to all the lab sessions"
+                    }
+                ]
+            },
+            {
+                "name": "M1",
+                "image": "",
+                "sub_achievements": true,
+                "sub_n": 4,
+                "pre": "Encroll and pass Math1 course.",
+                "post": "Math passed successfully.",
+                "sub": [
+                    {
+                        "name": "Intro to mathematics",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Go to your first degree math class",
+                        "post": "You've gone to your first math class"
+                    },
+                    {
+                        "name": "Derivation Exam",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Pass the first M1 exam.",
+                        "post": "You've passed the first exam of M1!"
+                    },
+                    {
+                        "name": "Integration Exam",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Pass the second M1 exam.",
+                        "post": "You've passed the second exam of M1!."
+                    },
+                    {
+                        "name": "Calculus best",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Go to all the lab sessions of M1 and submit the work",
+                        "post": "You've done to all the lab session, and now you are a calculus beast"
+                    }
+                ]
+            },
+            {
+                "name": "FIS",
+                "image": "",
+                "sub_achievements": true,
+                "sub_n": 4,
+                "pre": "Encroll and pass FIS course.",
+                "post": "FIS passed successfully.",
+                "sub": [
+                    {
+                        "name": "First Touch",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Go to your first lab of FISICS",
+                        "post": "You know how phisics labs work"
+                    },
+                    {
+                        "name": "Direct Current Exam",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Pass the first phisics exam",
+                        "post": "You alredy know how resitence and generators word in DC"
+                    },
+                    {
+                        "name": "Alternating Current Exam",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Pass the second phisics exam.",
+                        "post": "You know how basics AC circuits work"
+                    },
+                    {
+                        "name": "Lab Done",
+                        "image": "",
+                        "sub_achievements": false,
+                        "pre": "Go to all the lab sessions and submit the work",
+                        "post": "You've done to all the lab sessions"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "First extracurriculum activity",
+        "image": "",
+        "sub_achievements": false,
+        "pre": "Assist to any extracurricular activity",
+        "post": "You've participated to a FIB activity"
+    }
+]
