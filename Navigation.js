@@ -14,7 +14,7 @@ const Tab = createMaterialBottomTabNavigator();
 export default function Navigation() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator barStyle={{ backgroundColor: "#e56a54" }}>
         <Tab.Screen
           name="Upcoming"
           component={Upcoming}
