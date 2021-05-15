@@ -1,110 +1,138 @@
 [
     {
-        "date": [
-            "2021-5-17",
-            "22:00"
-        ],
-        "type": "academic",
-        "description": {
-            "subject": "PRO2",
-            "type": "delivery",
-            "summary": "Final work submission"
-        }
+        "id": "1",
+        "date": "2021-5-14",
+        "data": [
+            {
+                "time": "19:00",
+                "type": "event",
+                "description": "Start of the HackUPC",
+                "link": "https://hackupc.com/"
+            }
+        ]
     },
     {
-        "date": [
-            "2021-5-14",
-            "19:00"
-        ],
-        "type": "event",
-        "description": "Start of the HackUPC"
+        "id": "2",
+        "date": "2021-5-17",
+        "data": [
+            {
+                "time": "22:00",
+                "type": "academic",
+                "description": {
+                    "subject": "PRO2",
+                    "type": "delivery",
+                    "summary": "Final work submission",
+                },
+                "link": "https://raco.fib.upc.edu/avisos/veure.jsp?assig=GRAU-PRO2&id=118385"
+            }
+        ]
     },
     {
-        "date": [
-            "2021-5-19",
-            "15:00"
-        ],
-        "type": "academic",
-        "description": {
-            "subject": "EC",
-            "type": "delivery",
-            "summary": "Lab 5 report"
-        }
+        "id": "6",
+        "date": "2021-5-18",
+        "data": [
+            {
+                "time": "17:00",
+                "type": "academic",
+                "description": {
+                    "subject": "M2",
+                    "type": "exam",
+                    "summary": "Eulerian and Hamiltonian graphs",
+                },
+                "link": "https://nopebro"
+            }
+        ]
     },
     {
-        "date": [
-            "2021-5-21",
-            "12:00"
-        ],
-        "type": "social",
-        "description": "Everything 10% off at the bar"
+        "id": "3",
+        "date": "2021-5-19",
+        "data": [
+            {
+                "time": "15:00",
+                "type": "academic",
+                "description": {
+                    "subject": "EC",
+                    "type": "delivery",
+                    "summary": "Lab 5 report"
+                },
+                "link": "https://docencia.ac.upc.edu/FIB/grau/EC/#practiques"
+            },
+            {
+                "time": "19:00",
+                "type": "academic",
+                "description": {
+                    "subject": "M1",
+                    "type": "delivery",
+                    "summary": "Jacobian matrix variation",
+                },
+                "link": "https://nopebro"
+            }
+        ]
     },
     {
-        "date": [
-            "2021-5-21",
-            "15:30"
-        ],
-        "type": "academic",
-        "description": {
-            "subject": "PRO2",
-            "type": "exam",
-            "summary": "Everything done at the lab"
-        }
+        "id": "4",
+        "date": "2021-5-21",
+        "data": [
+            {
+                "time": "12:00",
+                "type": "social",
+                "description": "Everything 10% off at the bar",
+                "link": "https://www.google.es/maps/@41.389,2.113,3a,75y,53.04h,88.1t/data=!3m7!1e1!3m5!1sAF1QipMh1osAuXTgYF6A9c8ur4W0aw8jSlTBbMEfu6Ao!2e10!3e11!7i5376!8i2688"
+            },
+            {
+                "time": "15:30",
+                "type": "academic",
+                "description": {
+                    "subject": "PRO2",
+                    "type": "exam",
+                    "summary": "Everything done at the lab",
+                },
+                "link": "https://raco.fib.upc.edu/avisos/veure.jsp?espai=270005&id=118243"
+            }
+        ]
     },
     {
-        "date": [
-            "2021-5-18",
-            "17:00"
-        ],
-        "type": "academic",
-        "description": {
-            "subject": "M2",
-            "type": "exam",
-            "summary": "Eulerian and Hamiltonian graphs"
-        }
+        "id": "8",
+        "date": "2021-5-22",
+        "data": [
+            {
+                "time": "13: 00",
+                "type": "talks",
+                "description": "The beauty of recursive algorithms",
+                "link": "https://nopebro"
+            }
+        ]
     },
     {
-        "date": [
-            "2021-5-20",
-            "19:00"
-        ],
-        "type": "academic",
-        "description": {
-            "subject": "M1",
-            "type": "delivery",
-            "summary": "Jacobian matrix variation"
-        }
+        "id": "9",
+        "date": "2021-5-31",
+        "data": [
+            {
+                "time": "19:00",
+                "type": "academic",
+                "description": {
+                    "subject": "M1",
+                    "type": "exam",
+                    "summary": "Study of maximums, minimums and saddle points of vector functions",
+                },
+                "link": "https://nopebro"
+            }
+        ]
     },
     {
-        "date": [
-            "2021-5-22",
-            "1:00"
-        ],
-        "type": "talks",
-        "description": "The beauty of recursive algorithms"
-    },
-    {
-        "date": [
-            "2021-5-31",
-            "19:00"
-        ],
-        "type": "academic",
-        "description": {
-            "subject": "M1",
-            "type": "exam",
-            "summary": "Study of maximums, minimums and saddle points of vector functions"
-        }
-    },
-    {
-        "date": [
-            "2021-6-2",
-            "18:00"
-        ],
-        "type": "academic",
-        "description": {
-            "subject": "EC",
-            "type": "exam",
-            "summary": "Everything done at the lab"
-        }
+        "id": "10",
+        "date": "2021-6-2",
+        "data": [
+            {
+                "time": "18:00",
+                "type": "academic",
+                "description": {
+                    "subject": "EC",
+                    "type": "exam",
+                    "summary": "Everything done at the lab",
+                },
+                "link": "https://docencia.ac.upc.edu/FIB/grau/EC/calendari.html"
+            }
+        ]
     }
 ]

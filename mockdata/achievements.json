@@ -26,7 +26,7 @@
                 "image": "coding.png",
                 "sub_achievements": true,
                 "sub_n": 5,
-                "pre": "Encroll and pass PRO1 course.",
+                "pre": "Enroll and pass PRO1 course.",
                 "post": "PRO1 passed successfully.",
                 "sub": [
                     {
@@ -41,14 +41,14 @@
                         "image": "exam.png",
                         "sub_achievements": false,
                         "pre": "Pass the first PRO1 exam.",
-                        "post": "You've passed the first exam of PRO1!"
+                        "post": "You've passed the first PRO1 exam!"
                     },
                     {
                         "name": "Second Exam",
                         "image": "exam.png",
                         "sub_achievements": false,
                         "pre": "Pass the second PRO1 exam.",
-                        "post": "You've passed the second exam of PRO1!."
+                        "post": "You've passed the second PRO1 exam."
                     },
                     {
                         "name": "20% Problems Done",
@@ -64,7 +64,7 @@
                 "image": "cpu.png",
                 "sub_achievements": true,
                 "sub_n": 4,
-                "pre": "Encroll and pass IC course.",
+                "pre": "Enroll and pass the IC course.",
                 "post": "IC passed successfully.",
                 "sub": [
                     {
@@ -79,14 +79,14 @@
                         "image": "exam.png",
                         "sub_achievements": false,
                         "pre": "Pass the first IC exam.",
-                        "post": "You've passed the first exam of IC!"
+                        "post": "You've passed the first IC exam!"
                     },
                     {
                         "name": "Second Exam",
                         "image": "exam.png",
                         "sub_achievements": false,
                         "pre": "Pass the second IC exam.",
-                        "post": "You've passed the second exam of IC!."
+                        "post": "You've passed the second IC exam!."
                     },
                     {
                         "name": "Lab Done",
@@ -102,7 +102,7 @@
                 "image": "calculations.png",
                 "sub_achievements": true,
                 "sub_n": 4,
-                "pre": "Encroll and pass Math1 course.",
+                "pre": "Enroll and pass the M1 course.",
                 "post": "Math passed successfully.",
                 "sub": [
                     {
@@ -131,7 +131,7 @@
                         "image": "calculus.png",
                         "sub_achievements": false,
                         "pre": "Go to all the lab sessions of M1 and submit the work",
-                        "post": "You've done to all the lab session, and now you are a calculus beast"
+                        "post": "You've attended to all the lab session, and now you are a calculus beast"
                     }
                 ]
             },
@@ -140,14 +140,14 @@
                 "image": "",
                 "sub_achievements": true,
                 "sub_n": 4,
-                "pre": "Encroll and pass FIS course.",
+                "pre": "Enroll and pass the PHY course.",
                 "post": "FIS passed successfully.",
                 "sub": [
                     {
                         "name": "First Touch",
                         "image": "energy.png",
                         "sub_achievements": false,
-                        "pre": "Go to your first lab of FISICS",
+                        "pre": "Go to your first lab of physics",
                         "post": "You know how phisics labs work"
                     },
                     {
@@ -155,13 +155,13 @@
                         "image": "batteries.png",
                         "sub_achievements": false,
                         "pre": "Pass the first phisics exam",
-                        "post": "You alredy know how resitence and generators word in DC"
+                        "post": "You alredy know how resistance and generators word in DC"
                     },
                     {
                         "name": "Alternating Current Exam",
                         "image": "transistor.png",
                         "sub_achievements": false,
-                        "pre": "Pass the second phisics exam.",
+                        "pre": "Pass the second physics exam.",
                         "post": "You know how basics AC circuits work"
                     },
                     {
@@ -169,13 +169,14 @@
                         "image": "scientist.png",
                         "sub_achievements": false,
                         "pre": "Go to all the lab sessions and submit the work",
-                        "post": "You've done to all the lab sessions"
+                        "post": "You've gone to all the lab sessions"
                     }
                 ]
             }
         ]
     },
     {
+
         "name": "First extracurriculum activity",
         "image": "friends.png",
         "sub_achievements": false,
