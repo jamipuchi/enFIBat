@@ -11,10 +11,10 @@ import { StatusBar } from "expo-status-bar";
 import mockJsonData from "../mockdata/upcoming";
 
 const eventTypes = [
-  { name: "academic", seleced: true, color: "#ffc72c" },
-  { name: "event", seleced: true, color: "#e56a54" },
-  { name: "social", seleced: true, color: "#6da04b" },
-  { name: "talks", seleced: true, color: "#2f9fd0" },
+  { name: "academic", selected: true, color: "#ffc72c" },
+  { name: "event", selected: true, color: "#e56a54" },
+  { name: "social", selected: true, color: "#6da04b" },
+  { name: "talks", selected: true, color: "#2f9fd0" },
 ];
 
 export default function Upcoming() {
@@ -63,39 +63,36 @@ export default function Upcoming() {
     ));
   };
 
-  const FilterPills = () => (
-    <View style={styles.filterPillGroup}>
-      {selectedEventTypes.map((eventType, index) => {
-        return (
-          <TouchableOpacity
-            key={selectedEventTypes[index].name}
-            style={{
-              ...styles.filterPill,
-              backgroundColor: selectedEventTypes[index].selected
-                ? selectedEventTypes[index].color
-                : "#d3d3d3",
-            }}
-            onPress={() => {
-              const elements = selectedEventTypes;
-              elements[index] = {
-                name: selectedEventTypes[index].name,
-                selected: !selectedEventTypes[index].selected,
-                color: selectedEventTypes[index].color,
-              };
-              setSelectedEventTypes(elements);
-            }}
-          >
-            <Text>{eventType.name}</Text>
-          </TouchableOpacity>
-        );
-      })}
-    </View>
-  );
-
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <FilterPills />
+      <View style={styles.filterPillGroup}>
+        {selectedEventTypes.map((eventType, index) => {
+          return (
+            <TouchableOpacity
+              key={selectedEventTypes[index].name}
+              style={{
+                ...styles.filterPill,
+                backgroundColor: selectedEventTypes[index].selected
+                  ? selectedEventTypes[index].color
+                  : "#d3d3d3",
+              }}
+              onPress={() => {
+                selectedEventTypes;
+                const elements = selectedEventTypes;
+                elements[index] = {
+                  name: selectedEventTypes[index].name,
+                  selected: !selectedEventTypes[index].selected,
+                  color: selectedEventTypes[index].color,
+                };
+                setSelectedEventTypes([...elements]);
+              }}
+            >
+              <Text>{selectedEventTypes[index].name}</Text>
+            </TouchableOpacity>
+          );
+        })}
+      </View>
       <ScrollView style={styles.scrollView}>{renderEvents()}</ScrollView>
     </View>
   );
