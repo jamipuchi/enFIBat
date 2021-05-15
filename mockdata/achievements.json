@@ -1,27 +1,29 @@
 [
     {
         "name": "Welcome to enFIBat",
-        "image": "",
+        "image": "Welcome_to_enFIBat.png",
         "sub_achievements": false,
         "pre": "",
         "post": "You have successfully logged in to enFIBAT!!"
     },
     {
         "name": "First course enrolled",
-        "image": "",
+        "image": "medal.png",
         "sub_achievements": false,
         "pre": "Enroll to a course.",
         "post": "You have successfully enrolled in to your first course at FIB!!"
     },
     {
-        "name": "First Semester Done",
-        "image": "",
-        "sub_achievements": false,
+        "name": "First Semester",
+        "image": "school.png",
+        "sub_achievements": true,
         "sub_n": 4,
+        "pre": "Pass your first Semester",
+        "post": "First Semester Done!!",
         "sub": [
             {
                 "name": "PRO1",
-                "image": "",
+                "image": "coding.png",
                 "sub_achievements": true,
                 "sub_n": 5,
                 "pre": "Enroll and pass PRO1 course.",
@@ -29,37 +31,37 @@
                 "sub": [
                     {
                         "name": "First Program",
-                        "image": "",
+                        "image": "worldwide.png",
                         "sub_achievements": false,
                         "pre": "Submit any program!",
                         "post": "You submited you first program!"
                     },
                     {
                         "name": "First Exam",
-                        "image": "",
+                        "image": "exam.png",
                         "sub_achievements": false,
                         "pre": "Pass the first PRO1 exam.",
                         "post": "You've passed the first PRO1 exam!"
                     },
                     {
                         "name": "Second Exam",
-                        "image": "",
+                        "image": "exam.png",
                         "sub_achievements": false,
                         "pre": "Pass the second PRO1 exam.",
                         "post": "You've passed the second PRO1 exam."
                     },
                     {
-                        "name": "20 Problems Done",
-                        "image": "",
+                        "name": "20% Problems Done",
+                        "image": "offer.ong",
                         "sub_achievements": false,
                         "pre": "Do at least 20 correct submissions.",
-                        "post": "You've alredy done 20 corrects submissions to Jutge."
+                        "post": "You've alredy done 20% corrects submissions to Jutge."
                     }
                 ]
             },
             {
                 "name": "IC",
-                "image": "",
+                "image": "cpu.png",
                 "sub_achievements": true,
                 "sub_n": 4,
                 "pre": "Enroll and pass the IC course.",
@@ -67,28 +69,28 @@
                 "sub": [
                     {
                         "name": "First Lab Session",
-                        "image": "",
+                        "image": "flask.png",
                         "sub_achievements": false,
                         "pre": "Go to your first computer lab of IC",
                         "post": "You've gone to your first computer lab of IC"
                     },
                     {
                         "name": "First Exam",
-                        "image": "",
+                        "image": "exam.png",
                         "sub_achievements": false,
                         "pre": "Pass the first IC exam.",
                         "post": "You've passed the first IC exam!"
                     },
                     {
                         "name": "Second Exam",
-                        "image": "",
+                        "image": "exam.png",
                         "sub_achievements": false,
                         "pre": "Pass the second IC exam.",
                         "post": "You've passed the second IC exam!."
                     },
                     {
                         "name": "Lab Done",
-                        "image": "",
+                        "image": "informatics.png",
                         "sub_achievements": false,
                         "pre": "Go to all the lab sessions and submit the work",
                         "post": "You've done to all the lab sessions"
@@ -97,7 +99,7 @@
             },
             {
                 "name": "M1",
-                "image": "",
+                "image": "calculations.png",
                 "sub_achievements": true,
                 "sub_n": 4,
                 "pre": "Enroll and pass the M1 course.",
@@ -105,28 +107,28 @@
                 "sub": [
                     {
                         "name": "Intro to mathematics",
-                        "image": "",
+                        "image": "blackboard.png",
                         "sub_achievements": false,
                         "pre": "Go to your first degree math class",
                         "post": "You've gone to your first math class"
                     },
                     {
                         "name": "Derivation Exam",
-                        "image": "",
+                        "image": "document.png",
                         "sub_achievements": false,
                         "pre": "Pass the first M1 exam.",
                         "post": "You've passed the first exam of M1!"
                     },
                     {
                         "name": "Integration Exam",
-                        "image": "",
+                        "image": "document.png",
                         "sub_achievements": false,
                         "pre": "Pass the second M1 exam.",
                         "post": "You've passed the second exam of M1!."
                     },
                     {
-                        "name": "Calculus beast",
-                        "image": "",
+                        "name": "Calculus best",
+                        "image": "calculus.png",
                         "sub_achievements": false,
                         "pre": "Go to all the lab sessions of M1 and submit the work",
                         "post": "You've attended to all the lab session, and now you are a calculus beast"
@@ -143,28 +145,28 @@
                 "sub": [
                     {
                         "name": "First Touch",
-                        "image": "",
+                        "image": "energy.png",
                         "sub_achievements": false,
                         "pre": "Go to your first lab of physics",
                         "post": "You know how phisics labs work"
                     },
                     {
                         "name": "Direct Current Exam",
-                        "image": "",
+                        "image": "batteries.png",
                         "sub_achievements": false,
                         "pre": "Pass the first phisics exam",
                         "post": "You alredy know how resistance and generators word in DC"
                     },
                     {
                         "name": "Alternating Current Exam",
-                        "image": "",
+                        "image": "transistor.png",
                         "sub_achievements": false,
                         "pre": "Pass the second physics exam.",
                         "post": "You know how basics AC circuits work"
                     },
                     {
                         "name": "Lab Done",
-                        "image": "",
+                        "image": "scientist.png",
                         "sub_achievements": false,
                         "pre": "Go to all the lab sessions and submit the work",
                         "post": "You've gone to all the lab sessions"
@@ -174,10 +176,18 @@
         ]
     },
     {
-        "name": "First extracurricular activity",
-        "image": "",
+
+        "name": "First extracurriculum activity",
+        "image": "friends.png",
         "sub_achievements": false,
         "pre": "Assist to any extracurricular activity",
         "post": "You've participated to a FIB activity"
+    },
+    {
+        "name": "Second Semester",
+        "image": "school.png",
+        "sub_achievements": false,
+        "pre": "Pass your second Semester",
+        "post": "Second Semester Done!!"
     }
 ]
