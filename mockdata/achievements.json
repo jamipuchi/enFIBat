@@ -1,5 +1,6 @@
 [
     {
+        "id": "1",
         "name": "Welcome to enFIBat",
         "image": "Welcome_to_enFIBat.png",
         "sub_achievements": false,
@@ -7,6 +8,7 @@
         "post": "You have successfully logged in to enFIBAT!!"
     },
     {
+        "id": "2",
         "name": "First course enrolled",
         "image": "medal.png",
         "sub_achievements": false,
@@ -14,6 +16,7 @@
         "post": "You have successfully enrolled in to your first course at FIB!!"
     },
     {
+        "id": "3",
         "name": "First Semester",
         "image": "school.png",
         "sub_achievements": true,
@@ -22,6 +25,7 @@
         "post": "First Semester Done!!",
         "sub": [
             {
+                "id": "31",
                 "name": "PRO1",
                 "image": "coding.png",
                 "sub_achievements": true,
@@ -30,6 +34,7 @@
                 "post": "PRO1 passed successfully.",
                 "sub": [
                     {
+                        "id": "311",
                         "name": "First Program",
                         "image": "worldwide.png",
                         "sub_achievements": false,
@@ -37,6 +42,7 @@
                         "post": "You submited you first program!"
                     },
                     {
+                        "id": "312",
                         "name": "First Exam",
                         "image": "exam.png",
                         "sub_achievements": false,
@@ -44,6 +50,7 @@
                         "post": "You've passed the first PRO1 exam!"
                     },
                     {
+                        "id": "313",
                         "name": "Second Exam",
                         "image": "exam.png",
                         "sub_achievements": false,
@@ -51,6 +58,7 @@
                         "post": "You've passed the second PRO1 exam."
                     },
                     {
+                        "id": "314",
                         "name": "20% Problems Done",
                         "image": "offer.ong",
                         "sub_achievements": false,
@@ -60,6 +68,7 @@
                 ]
             },
             {
+                "id": "32",
                 "name": "IC",
                 "image": "cpu.png",
                 "sub_achievements": true,
@@ -68,6 +77,7 @@
                 "post": "IC passed successfully.",
                 "sub": [
                     {
+                        "id": "321",
                         "name": "First Lab Session",
                         "image": "flask.png",
                         "sub_achievements": false,
@@ -75,6 +85,7 @@
                         "post": "You've gone to your first computer lab of IC"
                     },
                     {
+                        "id": "322",
                         "name": "First Exam",
                         "image": "exam.png",
                         "sub_achievements": false,
@@ -82,6 +93,7 @@
                         "post": "You've passed the first IC exam!"
                     },
                     {
+                        "id": "323",
                         "name": "Second Exam",
                         "image": "exam.png",
                         "sub_achievements": false,
@@ -89,6 +101,7 @@
                         "post": "You've passed the second IC exam!."
                     },
                     {
+                        "id": "324",
                         "name": "Lab Done",
                         "image": "informatics.png",
                         "sub_achievements": false,
@@ -98,6 +111,7 @@
                 ]
             },
             {
+                "id": "33",
                 "name": "M1",
                 "image": "calculations.png",
                 "sub_achievements": true,
@@ -106,6 +120,7 @@
                 "post": "Math passed successfully.",
                 "sub": [
                     {
+                        "id": "331",
                         "name": "Intro to mathematics",
                         "image": "blackboard.png",
                         "sub_achievements": false,
@@ -113,6 +128,7 @@
                         "post": "You've gone to your first math class"
                     },
                     {
+                        "id": "332",
                         "name": "Derivation Exam",
                         "image": "document.png",
                         "sub_achievements": false,
@@ -120,6 +136,7 @@
                         "post": "You've passed the first exam of M1!"
                     },
                     {
+                        "id": "333",
                         "name": "Integration Exam",
                         "image": "document.png",
                         "sub_achievements": false,
@@ -127,6 +144,7 @@
                         "post": "You've passed the second exam of M1!."
                     },
                     {
+                        "id": "334",
                         "name": "Calculus best",
                         "image": "calculus.png",
                         "sub_achievements": false,
@@ -136,14 +154,16 @@
                 ]
             },
             {
+                "id": "34",
                 "name": "FIS",
-                "image": "",
+                "image": "offer.png",
                 "sub_achievements": true,
                 "sub_n": 4,
                 "pre": "Enroll and pass the PHY course.",
                 "post": "FIS passed successfully.",
                 "sub": [
                     {
+                        "id": "341",
                         "name": "First Touch",
                         "image": "energy.png",
                         "sub_achievements": false,
@@ -151,6 +171,7 @@
                         "post": "You know how phisics labs work"
                     },
                     {
+                        "id": "342",
                         "name": "Direct Current Exam",
                         "image": "batteries.png",
                         "sub_achievements": false,
@@ -158,6 +179,7 @@
                         "post": "You alredy know how resistance and generators word in DC"
                     },
                     {
+                        "id": "343",
                         "name": "Alternating Current Exam",
                         "image": "transistor.png",
                         "sub_achievements": false,
@@ -165,6 +187,7 @@
                         "post": "You know how basics AC circuits work"
                     },
                     {
+                        "id": "344",
                         "name": "Lab Done",
                         "image": "scientist.png",
                         "sub_achievements": false,
@@ -176,7 +199,7 @@
         ]
     },
     {
-
+        "id": "4",
         "name": "First extracurriculum activity",
         "image": "friends.png",
         "sub_achievements": false,
@@ -184,6 +207,7 @@
         "post": "You've participated to a FIB activity"
     },
     {
+        "id": "5",
         "name": "Second Semester",
         "image": "school.png",
         "sub_achievements": false,
