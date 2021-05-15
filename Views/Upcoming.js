@@ -14,26 +14,14 @@ const eventTypes = [
   { name: "academic", selected: true, color: "#ffc72c" },
   { name: "event", selected: true, color: "#e56a54" },
   { name: "social", selected: true, color: "#6da04b" },
-  { name: "talks", selected: true, color: "#2f9fd0" },
+  { name: "talks", selected: true, color: "#a59bc8" },
 ];
 
 export default function Upcoming() {
   const [selectedEventTypes, setSelectedEventTypes] = useState(eventTypes);
 
-  const getColorForEvent = (event) => {
-    if (event.type === "academic") {
-      return event.description.type === "delivery" ? "#ffc72c" : "#ebec00";
-    }
-    if (event.type === "event") {
-      return "#e56a54";
-    }
-    if (event.type === "social") {
-      return "#6da04b";
-    }
-    if (event.type === "talks") {
-      return "#2f9fd0";
-    }
-  };
+  const getColorForEvent = (event) =>
+    eventTypes.find((eventType) => eventType.name === event.type).color;
 
   const renderEvents = () => {
     const filteredData = mockJsonData.filter((date) => {
@@ -140,7 +128,12 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   titleText: { color: "black", fontSize: 16 },
-  time: { flexDirection: "column", width: "12%" },
+  time: {
+    flexDirection: "column",
+    width: "12%",
+    alignItems: "center",
+    alignContent: "center",
+  },
   eventView: {
     padding: 10,
     flexDirection: "column",
