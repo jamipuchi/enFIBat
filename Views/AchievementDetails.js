@@ -5,8 +5,9 @@ import LottieView from "lottie-react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
 
-export default function AchievementDetails() {
+export default function AchievementDetails({ route }) {
   const navigation = useNavigation();
+  const { text, progress } = route.params;
 
   return (
     <TouchableOpacity
@@ -14,40 +15,60 @@ export default function AchievementDetails() {
       onPress={() => navigation.goBack()}
     >
       <View style={styles.container}>
-        <Text style={styles.unlockedText}>UNBLOCKED A NEW ACHIEVEMENT</Text>
-        <LottieView source={require("../assets/data.json")} autoPlay loop />
-        <Text
-          style={{
-            position: "absolute",
-            bottom: 40,
-            width: "100%",
-            textAlign: "center",
-            fontSize: 25,
-            padding: 10,
-          }}
-        >
-          You drank 10 liters of 🍺 at the bar
+        <Text style={styles.unlockedText}>
+          {progress === 100
+            ? "UNBLOCKED A NEW ACHIEVEMENT"
+            : `You have completed ${progress}% of this challenge`}
         </Text>
-        <Text
-          style={{
-            position: "absolute",
-            bottom: 10,
-            width: "100%",
-            textAlign: "center",
-            fontSize: 12,
-            padding: 10,
-            color: "gray",
-          }}
-        >
-          Tap to dismiss
-        </Text>
+        {progress === 100 ? (
+          <LottieView source={require("../assets/data.json")} autoPlay loop />
+        ) : (
+          <View style={styles.barContainer}>
+            <View style={styles.progressBarInterior}>
+              <View
+                style={{ ...styles.progressBarExterior, width: progress * 3 }}
+              />
+            </View>
+          </View>
+        )}
       </View>
+      <Text
+        style={{
+          position: "absolute",
+          bottom: 40,
+          width: "100%",
+          textAlign: "center",
+          fontSize: 25,
+          padding: 10,
+        }}
+      >
+        {text}
+      </Text>
+      <Text
+        style={{
+          position: "absolute",
+          bottom: 10,
+          width: "100%",
+          textAlign: "center",
+          fontSize: 12,
+          padding: 10,
+          color: "gray",
+        }}
+      >
+        Tap to dismiss
+      </Text>
     </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
   container: { height: "100%", width: "100%" },
+  barContainer: {
+    marginTop: 50,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
   title: {
     fontSize: 20,
     fontWeight: "bold",
@@ -56,7 +77,20 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginTop: 80,
     width: "100%",
+    padding: 40,
     textAlign: "center",
     fontSize: 50,
+  },
+  progressBarInterior: {
+    marginTop: 20,
+    width: 300,
+    height: 10,
+    backgroundColor: "#d3d3d3",
+    borderRadius: 10,
+  },
+  progressBarExterior: {
+    height: 10,
+    backgroundColor: "limegreen",
+    borderRadius: 10,
   },
 });

@@ -15,10 +15,6 @@ export default class Profile extends Component {
         <View style={styles.body}>
           <Text style={styles.name}>Amelia Morcillo</Text>
           <Text style={styles.info}>36/240 credits</Text>
-          <Text style={styles.description}>
-            Lorem ipsum dolor sit amet, saepe sapientem eu nam. Qui ne assum
-            electram expetendis, omittam deseruisse consequuntur ius an,
-          </Text>
         </View>
       </View>
     );
@@ -45,10 +41,13 @@ const styles = StyleSheet.create({
     fontSize: 22,
     color: "#FFFFFF",
     fontWeight: "600",
+    alignContent: "center",
   },
   body: {
     marginTop: 40,
     padding: 30,
+    alignContent: "center",
+    alignItems: "center",
   },
   name: {
     fontSize: 28,
