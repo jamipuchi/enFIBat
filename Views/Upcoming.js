@@ -27,25 +27,26 @@ export default function Upcoming() {
   };
 
   const renderEvents = () => {
-    return mockJsonData.map((event) => {
+    return mockJsonData.map((event, index) => {
       const backgroundColor = getColorForEvent(event);
-      console.log(backgroundColor);
       return (
-        <View key={event.id} style={styles.event}>
-          <View style={styles.time}>
-            <Text style={styles.date}>{event.date[0]}</Text>
-            <Text style={styles.hour}>{event.date[1]}</Text>
+        <View key={event.id} style={styles.eventView}>
+          <Text style={styles.date}>{event.date[0]}</Text>
+          <View style={styles.event}>
+            <View style={styles.time}>
+              <Text style={styles.hour}>{event.date[1]}</Text>
+            </View>
+            <TouchableOpacity
+              style={{ ...styles.title, backgroundColor: backgroundColor }}
+              onPress={() => Linking.openURL("https://google.com")}
+            >
+              <Text style={styles.titleText}>
+                {event.description.summary
+                  ? `${event.description.summary} (${event.description.subject})`
+                  : event.description}
+              </Text>
+            </TouchableOpacity>
           </View>
-          <TouchableOpacity
-            style={{ ...styles.title, backgroundColor: backgroundColor }}
-            onPress={() => Linking.openURL("https://google.com")}
-          >
-            <Text style={styles.titleText}>
-              {event.description.summary
-                ? `${event.description.summary} (${event.description.subject})`
-                : event.description}
-            </Text>
-          </TouchableOpacity>
         </View>
       );
     });
@@ -87,5 +88,11 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   titleText: { color: "black" },
-  time: { flexDirection: "column", width: "20%" },
+  time: { flexDirection: "column", width: "12%" },
+  eventView: {
+    padding: 10,
+    flexDirection: "column",
+    width: "100%",
+    alignItems: "center",
+  },
 });
