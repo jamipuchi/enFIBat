@@ -57,6 +57,7 @@ export default function Achievements() {
       <View style={styles.badgeContainer}>
         {mockAchievements.map((ach) => (
           <TouchableOpacity
+            key={ach.name}
             style={styles.badge}
             onPress={() =>
               navigation.push("AchievementDetails", {
@@ -82,6 +83,7 @@ export default function Achievements() {
 const styles = StyleSheet.create({
   container: {
     paddingTop: 70,
+    padding: 10,
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",

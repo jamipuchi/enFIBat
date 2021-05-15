@@ -1,13 +1,14 @@
 import * as React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from "expo-status-bar";
+import TypeformEmbed from "react-native-typeform-embed";
 
 export default function SubjectForm() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>enFIBat!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <TypeformEmbed
+      url="https://dvepfpxqmnm.typeform.com/to/TTpaJDmA"
+      onSubmit={() => alert("Submitted!")}
+    />
   );
 }
 
