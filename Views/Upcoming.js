@@ -1,16 +1,16 @@
 import * as React from "react";
-import { StyleSheet, Text, View, ScrollView } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  ScrollView,
+  Linking,
+  TouchableOpacity,
+} from "react-native";
 import { StatusBar } from "expo-status-bar";
 import mockJsonData from "../mockdata/upcoming";
 
 export default function Upcoming() {
-  const eventTypes = [
-    { name: "academic", color: ["#ffc72c", "#ebec00"] },
-    { name: "event", color: "#e56a54" },
-    { name: "social", color: "#6da04b" },
-    { name: "talks", color: "#002f56" },
-  ];
-
   const getColorForEvent = (event) => {
     if (event.type === "academic") {
       return event.description.type === "delivery" ? "#ffc72c" : "#ebec00";
@@ -32,15 +32,20 @@ export default function Upcoming() {
       console.log(backgroundColor);
       return (
         <View key={event.id} style={styles.event}>
-          <Text style={styles.date}>{event.date[0]}</Text>
-          <Text style={styles.hour}>{event.date[1]}</Text>
-          <View style={{ ...styles.title, backgroundColor: backgroundColor }}>
+          <View style={styles.time}>
+            <Text style={styles.date}>{event.date[0]}</Text>
+            <Text style={styles.hour}>{event.date[1]}</Text>
+          </View>
+          <TouchableOpacity
+            style={{ ...styles.title, backgroundColor: backgroundColor }}
+            onPress={() => Linking.openURL("https://google.com")}
+          >
             <Text style={styles.titleText}>
               {event.description.summary
-                ? event.description.summary
+                ? `${event.description.summary} (${event.description.subject})`
                 : event.description}
             </Text>
-          </View>
+          </TouchableOpacity>
         </View>
       );
     });
@@ -62,6 +67,7 @@ const styles = StyleSheet.create({
     paddingTop: 20,
   },
   title: {
+    marginLeft: 10,
     flex: 1,
     fontSize: 20,
     fontWeight: "bold",
@@ -75,11 +81,11 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 10,
     borderRadius: 5,
+    alignItems: "center",
   },
   scrollView: {
     width: "100%",
   },
-  date: { width: "20%" },
-  hour: { width: "10%" },
   titleText: { color: "black" },
+  time: { flexDirection: "column", width: "20%" },
 });
