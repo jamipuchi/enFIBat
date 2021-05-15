@@ -36,63 +36,78 @@ export default function Upcoming() {
   };
 
   const renderEvents = () => {
-    return mockJsonData.map((event, index) => (
+    const filteredData = mockJsonData.filter((date) => {
+      for (let index = 0; index < date.data.length; index++) {
+        const element = date.data[index];
+        if (
+          selectedEventTypes.find((set) => set.name === element.type).selected
+        ) {
+          return true;
+        }
+      }
+      return false;
+    });
+    return filteredData.map((event, index) => (
       <View key={event.id} style={styles.eventView}>
         <Text style={styles.date}>{event.date}</Text>
-        {event.data.map((ev) => (
-          <View key={JSON.stringify(ev.description)} style={styles.event}>
-            <View style={styles.time}>
-              <Text style={styles.hour}>{ev.time}</Text>
+        {event.data.map((ev) =>
+          selectedEventTypes.find((set) => set.name === ev.type).selected ? (
+            <View key={JSON.stringify(ev.description)} style={styles.event}>
+              <View style={styles.time}>
+                <Text style={styles.hour}>{ev.time}</Text>
+              </View>
+              <TouchableOpacity
+                style={{
+                  ...styles.title,
+                  backgroundColor: getColorForEvent(ev),
+                }}
+                onPress={() => Linking.openURL(ev.link)}
+              >
+                <Text style={styles.titleText}>
+                  {ev.description.summary
+                    ? `${ev.description.summary} (${ev.description.subject})`
+                    : ev.description}
+                </Text>
+              </TouchableOpacity>
             </View>
-            <TouchableOpacity
-              style={{
-                ...styles.title,
-                backgroundColor: getColorForEvent(ev),
-              }}
-              onPress={() => Linking.openURL(ev.link)}
-            >
-              <Text style={styles.titleText}>
-                {ev.description.summary
-                  ? `${ev.description.summary} (${ev.description.subject})`
-                  : ev.description}
-              </Text>
-            </TouchableOpacity>
-          </View>
-        ))}
+          ) : null
+        )}
       </View>
     ));
   };
 
+  const FilterPills = () => (
+    <View style={styles.filterPillGroup}>
+      {selectedEventTypes.map((eventType, index) => {
+        return (
+          <TouchableOpacity
+            key={eventType.name}
+            style={{
+              ...styles.filterPill,
+              backgroundColor: eventType.selected ? eventType.color : "#d3d3d3",
+            }}
+            onPress={() => {
+              selectedEventTypes;
+              const elements = selectedEventTypes;
+              elements[index] = {
+                name: eventType.name,
+                selected: !eventType.selected,
+                color: eventType.color,
+              };
+              setSelectedEventTypes([...elements]);
+            }}
+          >
+            <Text>{eventType.name}</Text>
+          </TouchableOpacity>
+        );
+      })}
+    </View>
+  );
+
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <View style={styles.filterPillGroup}>
-        {selectedEventTypes.map((eventType, index) => {
-          return (
-            <TouchableOpacity
-              key={selectedEventTypes[index].name}
-              style={{
-                ...styles.filterPill,
-                backgroundColor: selectedEventTypes[index].selected
-                  ? selectedEventTypes[index].color
-                  : "#d3d3d3",
-              }}
-              onPress={() => {
-                selectedEventTypes;
-                const elements = selectedEventTypes;
-                elements[index] = {
-                  name: selectedEventTypes[index].name,
-                  selected: !selectedEventTypes[index].selected,
-                  color: selectedEventTypes[index].color,
-                };
-                setSelectedEventTypes([...elements]);
-              }}
-            >
-              <Text>{selectedEventTypes[index].name}</Text>
-            </TouchableOpacity>
-          );
-        })}
-      </View>
+      <FilterPills />
       <ScrollView style={styles.scrollView}>{renderEvents()}</ScrollView>
     </View>
   );
