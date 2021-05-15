@@ -22,8 +22,8 @@
                     "subject": "PRO2",
                     "type": "delivery",
                     "summary": "Final work submission",
-                    "link": "https://raco.fib.upc.edu/avisos/veure.jsp?assig=GRAU-PRO2&id=118385"
-                }
+                },
+                "link": "https://raco.fib.upc.edu/avisos/veure.jsp?assig=GRAU-PRO2&id=118385"
             }
         ]
     },
@@ -38,8 +38,8 @@
                     "subject": "M2",
                     "type": "exam",
                     "summary": "Eulerian and Hamiltonian graphs",
-                    "link": "https://nopebro"
-                }
+                },
+                "link": "https://nopebro"
             }
         ]
     },
@@ -53,9 +53,9 @@
                 "description": {
                     "subject": "EC",
                     "type": "delivery",
-                    "summary": "Lab 5 report",
-                    "link": "https://docencia.ac.upc.edu/FIB/grau/EC/#practiques"
-                }
+                    "summary": "Lab 5 report"
+                },
+                "link": "https://docencia.ac.upc.edu/FIB/grau/EC/#practiques"
             },
             {
                 "time": "19:00",
@@ -64,8 +64,8 @@
                     "subject": "M1",
                     "type": "delivery",
                     "summary": "Jacobian matrix variation",
-                    "link": "https://nopebro"
-                }
+                },
+                "link": "https://nopebro"
             }
         ]
     },
@@ -86,8 +86,8 @@
                     "subject": "PRO2",
                     "type": "exam",
                     "summary": "Everything done at the lab",
-                    "link": "https://raco.fib.upc.edu/avisos/veure.jsp?espai=270005&id=118243"
-                }
+                },
+                "link": "https://raco.fib.upc.edu/avisos/veure.jsp?espai=270005&id=118243"
             }
         ]
     },
@@ -114,8 +114,8 @@
                     "subject": "M1",
                     "type": "exam",
                     "summary": "Study of maximums, minimums and saddle points of vector functions",
-                    "link": "https://nopebro"
-                }
+                },
+                "link": "https://nopebro"
             }
         ]
     },
@@ -130,8 +130,8 @@
                     "subject": "EC",
                     "type": "exam",
                     "summary": "Everything done at the lab",
-                    "link": "https://docencia.ac.upc.edu/FIB/grau/EC/calendari.html"
-                }
+                },
+                "link": "https://docencia.ac.upc.edu/FIB/grau/EC/calendari.html"
             }
         ]
     }
