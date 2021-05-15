@@ -1,0 +1,51 @@
+[
+    {
+        "title": "104 Beers drunk today",
+        "type": "social",
+        "description": "The total amount of beers drunk today at our bar. Seems gona be a good day",
+        "link": "https://www.google.es/maps/@41.3892703,2.1131358,3a,75y,51.46h,88.97t/data=!3m7!1e1!3m5!1sAF1QipMh1osAuXTgYF6A9c8ur4W0aw8jSlTBbMEfu6Ao!2e10!3e11!7i5376!8i2688",
+        "image": "https://pbs.twimg.com/media/Eh3E0rzXkAAK9-h?format=jpg&name=large"
+    },
+    {
+        "title": "84 places available  at the Library",
+        "type": "educative",
+        "description": "Don't be afradi and use our beatifull and big library",
+        "link": "https://apps.bibliotecnica.upc.edu/reserva_llocs_estudi/comunes/metodo_autenticacion.php",
+        "image": "https://i0.wp.com/ilovesantaursula.com/wp-content/uploads/2019/05/Nueva-Sala-de-Estudios-San.jpg?fit=2000%2C1333&ssl=1"
+    },
+    {
+        "title": "Issues with L3 subway",
+        "type": "mobility",
+        "description": "Trouble near Pl.España inhabilitates subway line during 2 days",
+        "link": "https://twitter.com/TMB_Barcelona?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+        "image": "https://cronicaglobal.elespanol.com/uploads/s1/14/47/64/92/captura-de-pantalla-2021-05-06-a-las-13-02-57.png"
+    },
+    {
+        "title": "EC class is suspended",
+        "type": "educative",
+        "description": "Sorry but i had an urgent medical problem. It's impossible for me to attend the class. Sorry",
+        "link": "https://raco.fib.upc.edu/avisos/veure.jsp?assig=GRAU-EC&id=118262",
+        "image": "https://www.nuvol.com/app/uploads/2016/11/EMPTY-CLASSROOM-facebook.jpg"
+    },
+    {
+        "title": "Change of Classrom (Tuesday 3pm)",
+        "type": "educative",
+        "description": "Due to the air conditioner malfunctioning our class will be at A5-E02",
+        "link": "https://raco.fib.upc.edu/avisos/veure.jsp?assig=GRAU-EC&id=118262",
+        "image": "https://www.turbovent.co.za/wp-content/uploads/2018/12/common-air-conditioning-problems.jpg"
+    },
+    {
+        "title": "New Chat: new course delegats",
+        "type": "educative",
+        "description": "During the next weeks a debate between the candidaes will take place at RacoFib, make your purposes.",
+        "link": "https://raco.fib.upc.edu/forum/forums/list.page",
+        "image": "https://www.gland.ch/fileadmin/documents/user_upload/csm_Fotolia_94341686_S_8710d54ee1.jpg"
+    },
+    {
+        "title": "COVID-19 ALERT",
+        "type": "health",
+        "description": "Someone siting near you has been diagnosed with COVID-19, please check the current status and the instructions you must follow.",
+        "link": "https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/",
+        "image": "https://www.isglobal.org/documents/10179/7701712/covid+virus+3d.jpg"
+    }
+]
