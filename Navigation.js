@@ -9,12 +9,13 @@ import Profile from "./Views/Profile.js";
 import SubjectForm from "./Views/SubjectForm.js";
 import Upcoming from "./Views/Upcoming.js";
 import Facts from "./Views/Facts.js";
+import FactsDetails from "./Views/FactsDetails.js";
 import { Icon } from "react-native-elements";
 
 const Tab = createMaterialBottomTabNavigator();
 const Stack = createStackNavigator();
 
-const StackNavigator = () => {
+const AchivementScreens = () => {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -27,10 +28,23 @@ const StackNavigator = () => {
   );
 };
 
+const FactScreens = () => {
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Stack.Screen name="Facts" component={Facts} />
+      <Stack.Screen name="FactsDetails" component={FactsDetails} />
+    </Stack.Navigator>
+  );
+};
+
 export default function Navigation() {
   return (
     <NavigationContainer>
-      <Tab.Navigator barStyle={{ backgroundColor: "#e56a54" }}>
+      <Tab.Navigator barStyle={{ backgroundColor: "#ededed" }}>
         <Tab.Screen
           name="Upcoming"
           component={Upcoming}
@@ -43,7 +57,7 @@ export default function Navigation() {
         />
         <Tab.Screen
           name="Achievements"
-          component={StackNavigator}
+          component={AchivementScreens}
           options={{
             tabBarLabel: "Achievements",
             tabBarIcon: ({ color, size }) => (
@@ -53,7 +67,7 @@ export default function Navigation() {
         />
         <Tab.Screen
           name="Facts"
-          component={Facts}
+          component={FactScreens}
           options={{
             tabBarLabel: "Facts",
             tabBarIcon: ({ color, size }) => (
@@ -65,7 +79,7 @@ export default function Navigation() {
           name="SubjectForm"
           component={SubjectForm}
           options={{
-            tabBarLabel: "SubjectForm",
+            tabBarLabel: "Subject path",
             tabBarIcon: ({ color, size }) => (
               <Icon name="pencil" type="evilicon" color={color} />
             ),

@@ -37,7 +37,7 @@ const mockAchievements = [
     progress: 40,
   },
   {
-    name: "10 launches eaten at the bar",
+    name: "You have eaten 10 times at the bar",
     image: require("../assets/chevron-12.png"),
     progress: 30,
   },
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
   },
   badge: {
     alignItems: "center",
-    width: 130,
+    width: 100,
     height: 210,
   },
   badgeText: {

@@ -39,7 +39,7 @@ export default function AchievementDetails({ route }) {
           width: "100%",
           textAlign: "center",
           fontSize: 25,
-          padding: 10,
+          padding: 30,
         }}
       >
         {text}

@@ -149,6 +149,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
   },
   filterPillGroup: {
+    marginTop: 25,
     margin: 15,
     flexDirection: "row",
   },
