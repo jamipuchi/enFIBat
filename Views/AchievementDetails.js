@@ -32,31 +32,8 @@ export default function AchievementDetails({ route }) {
           </View>
         )}
       </View>
-      <Text
-        style={{
-          position: "absolute",
-          bottom: 40,
-          width: "100%",
-          textAlign: "center",
-          fontSize: 25,
-          padding: 30,
-        }}
-      >
-        {text}
-      </Text>
-      <Text
-        style={{
-          position: "absolute",
-          bottom: 10,
-          width: "100%",
-          textAlign: "center",
-          fontSize: 12,
-          padding: 10,
-          color: "gray",
-        }}
-      >
-        Tap to dismiss
-      </Text>
+      <Text style={styles.text}>{text}</Text>
+      <Text style={styles.dismiss}>Tap to dismiss</Text>
     </TouchableOpacity>
   );
 }
@@ -81,6 +58,14 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 50,
   },
+  text: {
+    position: "absolute",
+    bottom: 40,
+    width: "100%",
+    textAlign: "center",
+    fontSize: 25,
+    padding: 30,
+  },
   progressBarInterior: {
     marginTop: 20,
     width: 300,
@@ -92,5 +77,14 @@ const styles = StyleSheet.create({
     height: 10,
     backgroundColor: "limegreen",
     borderRadius: 10,
+  },
+  dismiss: {
+    position: "absolute",
+    bottom: 10,
+    width: "100%",
+    textAlign: "center",
+    fontSize: 12,
+    padding: 10,
+    color: "gray",
   },
 });
