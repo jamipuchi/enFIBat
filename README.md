@@ -17,8 +17,8 @@ We used the latest in multiplatform frameworks, React Native. We built it using 
 ## Challenges we ran into
 The team has different skill levels so some of the team members had to upskill a bit to contribute, but in the end everybody ended up contributing a lot in the project and we hope the result speaks for itself. Some of the team members are also new to hackathons and working in this fashion, but we found it very fun and helped us learn a lot!
 
-Accomplishments that we're proud of
-## We think we designed an app that we would, as FIB students, use everyday. We also think that the design is very inviting for new users with it's sleek looks and simplicity. It also would integrate with all the existing APIs for "el Raco" and it wouldn't require for the students to input any kind of extra information.
+## Accomplishments that we're proud of
+We think we designed an app that we would, as FIB students, use everyday. We also think that the design is very inviting for new users with it's sleek looks and simplicity. It also would integrate with all the existing APIs for "el Raco" and it wouldn't require for the students to input any kind of extra information.
 
 ## What we learned
 We learned a lot of React Native since it was the first contact for some of the team members. We also learned how to use the lottie framework, react navigation, json formatting... And finally we learned a bit of design, in which we tried to be very careful and detailed.
